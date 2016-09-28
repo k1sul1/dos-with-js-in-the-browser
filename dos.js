@@ -1,8 +1,9 @@
 function denialOfService(){
   var domain = window.location.hostname;
-  var elem = document.createElement("denial");
+  var elem = document.createElement('div');
   
-  elem.style.display = "none";
+  elem.id = 'denial'; 
+  elem.style.display = 'none';
   document.body.appendChild(elem);
   
   window.denialOfService = setInterval(function(){
